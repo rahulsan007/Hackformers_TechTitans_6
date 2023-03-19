@@ -17,7 +17,11 @@ function HeroSection() {
            ensure that so food is wasted <br/> by distributing extra food to people in need
           
         </p></div>
-        <Button variant="contained" sx={{backgroundColor:'black' , left:'47%'}}><Link to="/signup" style={{color:'white'}}>Join us</Link> </Button>
+        <Box sx={{display:'flex', justifyContent:'space-evenly'}}>
+        <Button  variant="contained" sx={{backgroundColor:'black' }}><Link to="/signup" style={{color:'white'}}>Join us</Link> </Button>
+        <Button variant="contained" sx={{backgroundColor:'black' }}><Link to="/hotelsignup" style={{color:'white'}}>Join as Hotel</Link> </Button>
+        <Button variant="contained" sx={{backgroundColor:'black' }}><Link to="/charitysignup" style={{color:'white'}}>Join as Charity</Link> </Button>
+        </Box>
       </Box>
       <Box backgroundColor='#F8EB7D'>
         <img src="https://fujioriental.com/ca_ES/web_editor/shape/illustration/themunchies-family-style-restaurant-food-lunch-meal-dessert-party-casual-svg-588?unique=6fea5a23&c1=%2392B475" />
