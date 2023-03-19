@@ -38,7 +38,7 @@ export default function FoodCard() {
 
 
   return (
-    <Box sx={{display:'flex'}}>
+    <Box sx={{display:'flex', justifyContent:'center'}}>
    {data.map(item =>(
      <Card key={item.name} sx={{ maxWidth: 345,borderTopLeftRadius:'20px',borderTopRightRadius:'20px', margin:'6px', display: isMobile ? "none" : "block"   }}>
      <CardMedia

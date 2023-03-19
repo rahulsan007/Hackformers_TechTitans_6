@@ -13,6 +13,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 export default function FoodCard() {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+
     
   return (
     <>

@@ -11,7 +11,7 @@ function HeroSection() {
         {/* <img src="https://fujioriental.com/ca_ES/web_editor/shape/illustration/themunchies-family-style-restaurant-food-lunch-meal-dessert-party-casual-svg-588?unique=6fea5a23&c1=%2392B475" /> */}
        
         <div sx={{margin:'5%'}}><h1 align='center' sx={{margin:'5px'}} >EDIBLES</h1></div>
-       <div> <p align='center' font-family='poppins'>
+       <div> <p align='center' >
           Food is important component of living being , So we team Edible
            ensure that so food is wasted <br/> by distributing extra food to people in need
           
