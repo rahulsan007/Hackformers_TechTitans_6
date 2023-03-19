@@ -31,13 +31,14 @@ const NavBar = () => {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        sx={{marginRight:'10px'}}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem sx={{color:'#000'}} onClick={handleClose} ><Link to="/" style={{color:'black'}}>Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/login" style={{color:'black'}}>Login</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/signup" style={{color:'#000'}}>Sign Up</Link></MenuItem>
+        <MenuItem sx={{color:'#000', }} onClick={handleClose} ><Link to="/" className="link">Home</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/login" className="link">Login</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/signup" className="link">Sign Up</Link></MenuItem>
       </Menu>
           <Stack direction='row'  sx={{
                 mr: 2,
