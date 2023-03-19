@@ -31,8 +31,8 @@ export default function MultiActionAreaCard() {
       .catch(error => console.log(error));
   }, []);
   return (
-    <Box sx={{display:'flex'}}>
-      {data.map(item =>(<Card sx={{ maxWidth: 345 }}>
+    <Box sx={{display:'flex', justifyContent:'center'}}>
+      {data.map(item =>(<Card sx={{ maxWidth: 345 , margin:'10px'}}>
       <CardActionArea>
         <CardMedia
           component="img"
