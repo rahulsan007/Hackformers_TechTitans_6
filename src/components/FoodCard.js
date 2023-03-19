@@ -55,8 +55,8 @@ export default function FoodCard() {
        </Typography>
      </CardContent>
      <CardActions>
-       <Typography sx={{textDecoration:'line-through', color:'#70706f'}}>{item.reamount}</Typography>
-       <Typography >{item.discount}</Typography>
+       <Typography sx={{textDecoration:'line-through', color:'#70706f'}}>₹{item.reamount}</Typography>
+       <Typography >₹{item.discount}</Typography>
      </CardActions>
      <CardActions sx={{justifyContent:'space-between'}}>
      <Button variant="contained" sx={{'&:hover': { backgroundColor: '#4a4a4a' }, background:'#000'}} endIcon={<ArrowForwardIosIcon/>}>Order Now</Button>
