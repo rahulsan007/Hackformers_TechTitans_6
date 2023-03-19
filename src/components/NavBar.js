@@ -6,6 +6,7 @@ import Logo from '../assets/logo.svg'
 import { deepOrange, deepPurple } from '@mui/material/colors';
 import Avatar from '@mui/material/Avatar';
 import AvatarDrop from '../components/AvatarDrop'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     
@@ -34,18 +35,18 @@ const NavBar = () => {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem sx={{color:'#000'}} onClick={handleClose}><a href='/' style={{color:'black'}}>Home</a></MenuItem>
-        <MenuItem onClick={handleClose}><a href='/' style={{color:'black'}}>For Restuarant</a></MenuItem>
-        <MenuItem onClick={handleClose}><a href='/' style={{color:'black'}}>For Users</a></MenuItem>
+        <MenuItem sx={{color:'#000'}} onClick={handleClose} ><Link to="/" style={{color:'black'}}>Home</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/login" style={{color:'black'}}>Login</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/signup" style={{color:'#000'}}>Sign Up</Link></MenuItem>
       </Menu>
           <Stack direction='row'  sx={{
                 mr: 2,
                 display: { xs: 'none', md: 'block' },
                 
               }}>
-            <Button color='inherit' ><a href='/' style={{color:'black'}}>Home</a></Button>
-            <Button color='inherit'><a href='/login' style={{color:'black'}}>Login</a></Button>
-            <Button color='inherit'><a href='/signup' style={{color:'black'}}>Signup</a></Button>
+            <Button color='inherit' ><Link to="/">Home</Link></Button>
+            <Button color='inherit'><Link to="/login">Login</Link></Button>
+            <Button color='inherit'><Link to="/signup">Sign Up</Link></Button>
             <a href="http://localhost:3001/Profile"><Avatar sx={{ bgcolor: deepOrange[500], float:'right' }}>N</Avatar></a>
            {/* <section sx={{float:'right'}}> <AvatarDrop/></section> */}
           </Stack>

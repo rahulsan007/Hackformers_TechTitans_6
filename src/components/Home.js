@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import Space from "../assets/space.png";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -16,7 +17,7 @@ function HeroSection() {
            ensure that so food is wasted <br/> by distributing extra food to people in need
           
         </p></div>
-        <Button variant="contained" sx={{backgroundColor:'black' , left:'47%'}}><a style={{color:'white'}} href="/signup">Join us</a> </Button>
+        <Button variant="contained" sx={{backgroundColor:'black' , left:'47%'}}><Link to="/signup" style={{color:'white'}}>Join us</Link> </Button>
       </Box>
       <Box backgroundColor='#F8EB7D'>
         <img src="https://fujioriental.com/ca_ES/web_editor/shape/illustration/themunchies-family-style-restaurant-food-lunch-meal-dessert-party-casual-svg-588?unique=6fea5a23&c1=%2392B475" />
